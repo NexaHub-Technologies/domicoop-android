@@ -1,0 +1,38 @@
+package com.nexahub.domicoop.navigation
+
+/** All destinations — mirrors Expo Router structure in app/. */
+object Routes {
+    const val BOOT = "boot"
+    const val SPLASH = "splash"
+    const val WELCOME = "welcome"
+    const val SIGN_IN = "sign_in"
+    const val SIGN_UP = "sign_up"
+    const val FORGOT = "forgot"
+    const val RESET = "reset"
+    const val REG_CLOSED = "registration_closed"
+    const val GUIDELINES = "guidelines"
+    const val TABS = "tabs"
+    const val HOME = "home"
+    const val CONTRIBUTIONS_TAB = "contributions_tab"
+    const val LOANS_TAB = "loans_tab"
+    const val ANNOUNCEMENTS = "announcements"
+    const val PROFILE = "profile"
+    const val CONTRIBUTION_DETAIL = "contribution_detail/{id}"
+    const val LOAN_DETAIL = "loan_detail/{id}"
+    const val ADD_CONTRIBUTION = "add_contribution"
+    const val MAKE_PAYMENT = "make_payment"
+    const val APPLY_LOAN = "apply_loan"
+    const val NOTIFICATIONS = "notifications"
+    const val ANNOUNCEMENT_DETAIL = "announcement_detail"
+    const val EDIT_PROFILE = "edit_profile"
+    const val SECURITY = "security"
+    const val CHANGE_PASSWORD = "change_password"
+    const val THEME_PREF = "theme_pref"
+    const val NOTIF_PREFS = "notif_prefs"
+    const val PRIVACY = "privacy"
+    const val SUPPORT = "support"
+    const val SUCCESS = "success"
+
+    fun contributionDetail(id: String) = "contribution_detail/$id"
+    fun loanDetail(id: String) = "loan_detail/$id"
+}
